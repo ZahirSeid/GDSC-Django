@@ -21,7 +21,7 @@ def view_student():
         if option.upper() == "Y":
             add_student()
         elif option.upper() == "N":
-            main()
+            return
         else:
             print("Invalid input!")
             exit()
