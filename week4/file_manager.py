@@ -24,7 +24,7 @@ def update_file(file_path):
         
         # Append a timestamp to the content
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        updated_content = f"{content}\nUpdated at: {timestamp}"
+        updated_content = f"{content}\n#Updated at: {timestamp}"
         
         # Write the updated content back to the file
         with open(file_path, 'w') as file:
@@ -59,6 +59,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-Updated at: 2023-12-13 14:25:20
