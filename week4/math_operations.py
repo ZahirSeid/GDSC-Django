@@ -4,7 +4,7 @@ def basic_operations(a, b):
         subtraction = a - b
         multiplication = a * b
         division = a / b
-        return {'addition': addition, 'subtraction': subtraction, 'multiplication': multiplication, 'division': division}
+        return {f"{a}+{b}": addition, f"{a}-{b}": subtraction, f"{a}*{b}": multiplication, f"{a}/{b}": division}
     except ZeroDivisionError:
         return {'error': 'Division by zero is not allowed.'}
 
