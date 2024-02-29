@@ -2,16 +2,14 @@ import os
 import django
 from django.conf import settings
 from django.utils import timezone
-
-# Configure Django settings
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'GDSCBlog.settings')
-django.setup()
-
-# Import models
 from BlogApp.models import Post
 from CommentApp.models import Comment
 
-# Django ORM operations
+
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'GDSCBlog.settings')
+django.setup()
+
+
 def post_operations():
     # Create posts
     post1 = Post.objects.create(title="Post 1", content="Content 1", category="Category 1", image="image1.jpg", tags=["tag1", "tag2"])
